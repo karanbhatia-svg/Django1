@@ -1,0 +1,11 @@
+,
+<form action='final_update/{{record.id}}' method="POST">
+{% csrf_token %}
+    Name : <input name='name' value="{{record.id}}">
+    <br>
+    Class : <input name='class' value="{{record.cl}}">
+    <br>
+    Gender : <input name='gender' value="{{record.gender}}">
+    <br>
+    <input type="submit" value="UPDATE">
+</form>

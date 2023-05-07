@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+</style>
+</head>
+<body>
+<h1>ShowAll</h1><br>
+<table border >
+    {% for item in mymember %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+             <td>{{item.cl}}</td>
+            <td>{{item.gender}}</td>
+        </tr>
+    {% endfor %}
+    </table><br>

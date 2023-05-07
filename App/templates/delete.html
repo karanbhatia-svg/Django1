@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Delete</h1>
+<form action="delete" method="POST">
+{% csrf_token %}
+Enter id : <input type="text" name='sid'>
+<br>
+<input type="submit" value="delete">
+</form>
+</body>
+</html>
